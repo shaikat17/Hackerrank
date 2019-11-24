@@ -41,9 +41,9 @@ int main()
         cout<<abs(sz-(upper_bound(vec.begin(), vec.end(), avec[i])
             - vec.begin()))+1<<endl;
     }
-//sort(vec.begin(), vec.end());
-// cout<<upper_bound(vec.begin(), vec.end(), 50)
-//             - vec.begin();
+///sort(vec.begin(), vec.end());
+/// cout<<upper_bound(vec.begin(), vec.end(), 50)
+///             - vec.begin();
 
     return 0;
 }
