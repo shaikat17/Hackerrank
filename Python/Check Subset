@@ -1,0 +1,8 @@
+#https://www.hackerrank.com/challenges/py-check-subset/
+
+for _ in range(int(input())):
+    n1 = input()
+    s1 = set(input().split())
+    n2 = input()
+    s2 = set(input().split())
+    print(s1.issubset(s2))
