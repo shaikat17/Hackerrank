@@ -1,0 +1,8 @@
+#https://www.hackerrank.com/challenges/py-set-mutations/
+
+_ = input()
+intz = set(map(int, input().split()))
+for _ in range(int(input())):
+    command, *args = input().split()
+    getattr(intz, command)(set(map(int, input().split()))) 
+print(sum(intz))
