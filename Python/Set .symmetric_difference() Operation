@@ -1,0 +1,6 @@
+#https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/
+
+a,b = int(input()), set(input().split())
+c,d = int(input()), set(input().split())
+
+print(len(b^d))   #b.symmetric_difference(d)
