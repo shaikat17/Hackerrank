@@ -1,0 +1,15 @@
+#https://www.hackerrank.com/challenges/zipped/problem
+
+_, n = map(int, input().split())
+
+res = []
+
+for _ in range(n):
+    res.append(list(map(float, input().split())))
+    
+ls = zip(*res)
+
+fnLs = list(ls)
+
+for i in fnLs:
+    print(sum(i)/n)
