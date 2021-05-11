@@ -1,0 +1,12 @@
+#https://www.hackerrank.com/challenges/py-the-captains-room/
+
+from collections import Counter
+n = int(input())
+ls = list(input().split())
+
+cnt = Counter(ls)
+
+for key in cnt:
+    if cnt[key] == 1:
+        print(key)
+        break
