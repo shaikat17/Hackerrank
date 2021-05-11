@@ -1,0 +1,21 @@
+#https://www.hackerrank.com/challenges/maximize-it/problem
+
+from itertools import product
+
+Ni = []
+k,M = map(int,input().split())
+for _ in range(k):
+    Ni.append(list(map(int,input().split()))[1:])
+    
+
+NiList = list(product(*Ni))
+
+sumilist=[]
+for x in NiList:
+    sumi=0
+    for y in x:
+        sumi = pow(y,2)+sumi
+    sumilist.append(sumi%int(M))
+
+
+print(max(sumilist))
