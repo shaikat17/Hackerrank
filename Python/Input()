@@ -1,0 +1,6 @@
+# https://www.hackerrank.com/challenges/input/problem
+
+x,k = [int(x) for x in input().split()]
+
+#print(True if eval(input()) == k else False) works
+print(eval(input()) == k)
