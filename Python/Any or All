@@ -1,0 +1,5 @@
+# https://www.hackerrank.com/challenges/any-or-all/problem
+
+n , lst = int(input()), input().split()
+
+print(all(int(i) > 0 for i in lst) and any(k == k[::-1] for k in lst))
