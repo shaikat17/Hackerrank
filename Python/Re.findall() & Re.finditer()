@@ -1,0 +1,13 @@
+# https://www.hackerrank.com/challenges/re-findall-re-finditer/problem
+
+
+import re
+
+tokenRe = re.compile(r"(?<=[qwrtypsdfghjklzxcvbnm])([aeiou]{2,})(?=[qwrtypsdfghjklzxcvbnm])",re.IGNORECASE)
+
+m = re.findall(tokenRe,input())
+
+if m==[]:
+    print(-1)
+else:
+    print(*m, sep='\n')
