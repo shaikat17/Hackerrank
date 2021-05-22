@@ -1,0 +1,13 @@
+# https://www.hackerrank.com/challenges/re-start-re-end/problem
+
+
+import re
+
+trgt = input()
+st = input()
+
+if re.search(r'(?='+st+')',trgt):
+    for m in re.finditer(r'(?='+st+')',trgt):
+        print((m.start(),m.end()+len(st)-1))
+else:
+    print((-1,-1))  
