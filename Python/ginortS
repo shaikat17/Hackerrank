@@ -1,0 +1,6 @@
+#https://www.hackerrank.com/challenges/ginorts/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import string
+
+print(*sorted(input(),key=(string.ascii_letters+'1357902468').index), sep='') #Read more about string https://docs.python.org/3/library/string.html
