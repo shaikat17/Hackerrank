@@ -1,0 +1,5 @@
+#Problem Link: https://www.hackerrank.com/challenges/re-sub-regex-substitution/
+
+import re
+
+print('\n'.join(re.sub(r'(?<= )(&&|\|\|)(?= )', lambda x: 'and' if x.group() == '&&' else 'or', input()) for _ in range(int(input()))))
