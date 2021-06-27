@@ -1,0 +1,15 @@
+#Problem Link: https://www.hackerrank.com/challenges/hex-color-code/
+
+import re
+
+print(*[ext for _ in range(int(input())) for ext in re.findall(r"[\s:](#[A-F0-9]{6}|#[a-f0-9]{3})", input(), re.I)], sep='\n')
+
+'''
+      First Method
+for _ in range(int(input())):
+    x = re.findall(r"[\s:](#[A-F0-9]{6}|#[a-f0-9]{3})", input(), re.I)
+    
+    if x:
+        print(*x, sep='\n')
+        
+'''
