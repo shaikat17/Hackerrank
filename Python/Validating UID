@@ -1,0 +1,14 @@
+#https://www.hackerrank.com/challenges/validating-uid/problem
+
+import re
+
+for _ in range(int(input())):
+    uid = input()
+       
+    if len(set(uid))<10:
+        print('Invalid')
+    else:
+        if re.match('[0-9a-zA-Z]{10}$',uid) and len(re.findall('\d',uid))>=3 and len(re.findall('[A-Z]',uid))>=2:
+            print('Valid')
+        else:
+            print('Invalid')
